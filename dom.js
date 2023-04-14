@@ -8,3 +8,15 @@ title[0].style.color = 'green'
 const ul = document.getElementById('items');
 ul.children[2].style.background = 'green'
 ul.style.fontWeight= 'bold'
+
+
+const listByClass = document.getElementsByClassName('list-group-item');
+// list.forEach((list1) => list1.style.color = 'red');
+for(let i=0; i<listByClass.length; i++){
+    listByClass[i].style.color = 'red'
+}
+
+const listByTag = document.getElementsByTagName('li');
+for(let i=0; i<listByTag.length; i++){
+    listByTag[i].style.color = "blue"
+} 
